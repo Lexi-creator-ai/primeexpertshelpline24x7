@@ -5,136 +5,271 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Prime Experts Helpline 24x7 - Amazon Prime TV Helpline and Support</title>
     <style>
-        body { font-family: Arial, sans-serif; margin: 20px; line-height: 1.6; }
-        header { text-align: center; }
-        section { margin-bottom: 40px; }
-        footer { text-align: center; border-top: 1px solid #ccc; padding-top: 20px; }
-        a { color: blue; }
-        dl { margin-left: 20px; }
-        ol { margin-left: 20px; }
-        .disclaimer { font-weight: bold; color: red; }
+        :root {
+            --amazon-orange: #FF9900;
+            --amazon-blue: #146EB4;
+            --amazon-black: #000000;
+            --amazon-dark: #232F3E;
+            --light-gray: #F2F2F2;
+            --white: #FFFFFF;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+            color: var(--amazon-dark);
+            background-color: var(--light-gray);
+        }
+
+        header {
+            background-color: var(--amazon-dark);
+            color: var(--white);
+            padding: 25px 0;
+            text-align: center;
+            border-bottom: 5px solid var(--amazon-orange);
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.8em;
+            color: var(--amazon-orange);
+        }
+
+        header .disclaimer {
+            font-size: 1em;
+            margin: 12px 0 0;
+            color: #ddd;
+            max-width: 90%;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        nav {
+            background-color: var(--amazon-blue);
+            padding: 12px 0;
+            text-align: center;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+        }
+
+        nav a {
+            color: var(--white);
+            text-decoration: none;
+            margin: 0 25px;
+            font-weight: bold;
+            font-size: 1.15em;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: var(--amazon-orange);
+        }
+
+        main {
+            max-width: 1200px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+
+        section {
+            background-color: var(--white);
+            padding: 35px;
+            margin-bottom: 50px;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+            border-top: 6px solid var(--amazon-orange);
+        }
+
+        h2 {
+            color: var(--amazon-blue);
+            border-bottom: 3px solid var(--amazon-orange);
+            padding-bottom: 12px;
+            margin-bottom: 25px;
+            font-size: 2.1em;
+        }
+
+        h3 {
+            color: var(--amazon-dark);
+            margin-top: 30px;
+        }
+
+        .disclaimer {
+            font-weight: bold;
+            color: #c62828;
+            background-color: #ffebee;
+            padding: 12px 18px;
+            border-radius: 6px;
+            margin: 20px 0;
+            border-left: 5px solid #c62828;
+        }
+
+        ol, ul, dl {
+            margin-left: 30px;
+            margin-bottom: 20px;
+        }
+
+        dt {
+            font-weight: bold;
+            margin-top: 15px;
+            color: var(--amazon-blue);
+        }
+
+        .phone-number {
+            font-size: 2.2em;
+            font-weight: bold;
+            color: var(--amazon-orange);
+            text-align: center;
+            margin: 25px 0;
+            padding: 15px;
+            background-color: #fff3e0;
+            border-radius: 8px;
+            display: inline-block;
+            width: 100%;
+            max-width: 400px;
+        }
+
+        footer {
+            background-color: var(--amazon-dark);
+            color: var(--white);
+            padding: 50px 20px 30px;
+            text-align: center;
+            margin-top: 80px;
+        }
+
+        footer a {
+            color: var(--amazon-orange);
+            text-decoration: none;
+            margin: 0 18px;
+            font-weight: bold;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        footer section {
+            background: none;
+            box-shadow: none;
+            border: none;
+            color: var(--white);
+            margin: 35px 0;
+            padding: 0;
+            max-width: 1000px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        footer h3 {
+            color: var(--amazon-orange);
+            font-size: 1.5em;
+            margin-bottom: 18px;
+        }
+
+        footer p {
+            margin: 12px 0;
+        }
     </style>
 </head>
 <body>
+
     <header>
-        <h1>Amazon Prime TV Helpline and Support</h1>
-        <p class="disclaimer">This is an independent support service provided by Prime Experts Helpline 24x7. We are not affiliated with Amazon or any other brand. All trademarks are the property of their respective owners.</p>
+        <h1>Amazon Prime TV Helpline & Support</h1>
+        <p class="disclaimer">This is an INDEPENDENT third-party support service provided by Prime Experts Helpline 24x7. We are NOT affiliated with Amazon.com, Inc., Prime Video, or any Amazon brands. All trademarks, logos, and names are the property of their respective owners.</p>
     </header>
 
-    <section id="about">
-        <h2>About Prime Experts Helpline 24x7</h2>
-        <p>Prime Experts Helpline 24x7 is an independent third-party support provider dedicated to assisting users with Amazon Prime Video-related issues. We offer 24/7 helpline services to help you troubleshoot activation problems, streaming issues, and more. Our team of experts is here to guide you through common challenges without any official affiliation to Amazon. We aim to provide reliable, unbiased support to enhance your viewing experience.</p>
-        <p>As an independent entity, we do not represent Amazon or Prime Video. Our services are designed to complement official resources by offering personalized assistance via phone. If you encounter any issues, feel free to contact us for help.</p>
-    </section>
+    <nav>
+        <a href="#about">About Us</a>
+        <a href="#activation">Activation Steps</a>
+        <a href="#faq">FAQ</a>
+        <a href="#contact">Contact Support</a>
+    </nav>
 
-    <section id="activation">
-        <h2>Steps to Activate Prime Video on Your TV</h2>
-        <p>Follow these official steps to activate Amazon Prime Video on your smart TV or streaming device. If you need assistance at any point, call our helpline at +1-888-766-1625.</p>
-        <ol>
-            <li>Download and install the Prime Video app from your device's app store (e.g., on your smart TV, Roku, Fire TV, etc.).</li>
-            <li>Open the Prime Video app on your device.</li>
-            <li>Select "Sign in and start watching" if you want to enter your Amazon account details directly on the device (not recommended for TVs with poor keyboards).</li>
-            <li>Alternatively, choose "Register on the Amazon website" to receive a 5-6 character activation code displayed on your screen.</li>
-            <li>On a separate device (like a computer or smartphone), go to the official Amazon website: <a href="https://www.amazon.com/code" target="_blank" rel="noopener noreferrer">amazon.com/code</a>.</li>
-            <li>Sign in to your Amazon account.</li>
-            <li>Enter the activation code shown on your TV and select "Register Device."</li>
-            <li>Your device should now be activated, and you can start streaming. If you face any errors, such as code not working or login issues, contact us for support.</li>
-        </ol>
-        <p class="disclaimer">Note: Always use the official Amazon website for entering codes to ensure security. We do not handle code entry; our support is via phone guidance only.</p>
-    </section>
+    <main>
 
-    <section id="faq">
-        <h2>Frequently Asked Questions (FAQ)</h2>
-        <dl>
-            <dt>What is Amazon Prime Video?</dt>
-            <dd>Amazon Prime Video is a streaming service offered by Amazon that provides access to movies, TV shows, and original content as part of an Amazon Prime membership.</dd>
+        <section id="about">
+            <h2>About Prime Experts Helpline 24x7</h2>
+            <p>Prime Experts Helpline 24x7 is a completely independent support provider specializing in helping users resolve common issues with Amazon Prime Video on TVs and streaming devices. We offer round-the-clock phone assistance for activation, troubleshooting, and basic guidance.</p>
+            <p>We operate as a separate entity with no affiliation, partnership, or endorsement from Amazon or Prime Video. Our goal is to provide helpful, unbiased support based on publicly available information and common user experiences.</p>
+        </section>
 
-            <dt>Why is my activation code not working?</dt>
-            <dd>Common reasons include typing errors, expired codes (they last about 30 minutes), or network issues. Try generating a new code or ensure you're signed into the correct Amazon account. Call us for step-by-step troubleshooting.</dd>
+        <section id="activation">
+            <h2>Steps to Activate Prime Video on Your TV</h2>
+            <p>Here are the standard steps to register and activate Prime Video on most smart TVs, Roku, Fire TV, or other streaming devices. If you run into any trouble, our team is available 24/7 at the number below.</p>
+            <ol>
+                <li>Install the Prime Video app from your device's app store or channel store.</li>
+                <li>Launch the Prime Video application on your TV/device.</li>
+                <li>Select "Sign in" or the registration option (avoid typing credentials directly on TV if possible).</li>
+                <li>Choose the option to get an activation/registration code (usually 5-6 characters) displayed on screen.</li>
+                <li>On a phone, tablet, or computer, visit the official site: <a href="https://www.amazon.com/code" target="_blank" rel="noopener noreferrer">amazon.com/code</a></li>
+                <li>Sign in to your Amazon account.</li>
+                <li>Enter the code shown on your TV screen and submit.</li>
+                <li>Your device should activate within seconds. Enjoy streaming!</li>
+            </ol>
+            <p class="disclaimer">Always use the official Amazon website for code entry. We provide phone guidance only and never ask for passwords, payment info, or remote access.</p>
+        </section>
 
-            <dt>How do I fix buffering or streaming issues on Prime Video?</dt>
-            <dd>Check your internet connection, restart your device, clear the app cache, or update the app. If problems persist, our experts can help diagnose hardware or account-specific issues.</dd>
+        <section id="faq">
+            <h2>Frequently Asked Questions</h2>
+            <dl>
+                <dt>Why won't my activation code work?</dt>
+                <dd>Codes expire quickly (~15-30 min), may have typos, or be for the wrong account. Generate a fresh code and double-check entry.</dd>
 
-            <dt>Is this service free?</dt>
-            <dd>Our basic guidance is free, but premium support sessions may involve fees. See our Refund Policy for details.</dd>
+                <dt>Prime Video keeps buffering or freezing</dt>
+                <dd>Usually caused by slow internet, Wi-Fi interference, outdated app, or device cache. Restart router/device, or call us for more tips.</dd>
 
-            <dt>Can I cancel my Prime membership through this site?</dt>
-            <dd>No, we are independent. Please manage your membership directly on the official Amazon website.</dd>
-        </dl>
-    </section>
+                <dt>Is this an official Amazon support line?</dt>
+                <dd>No — we are an independent helpline. For official support, visit amazon.com/help or use Prime Video app settings.</dd>
 
-    <section id="contact">
-        <h2>Contact Support</h2>
-        <p>For immediate assistance with Amazon Prime Video activation, troubleshooting, or any other queries, call our 24/7 helpline:</p>
-        <p><strong>+1-888-766-1625</strong></p>
-        <p>We provide expert guidance over the phone. Note: This is an independent service; for official Amazon support, visit amazon.com.</p>
-        <!-- Assuming "code.html" might be a separate page for advanced support or code troubleshooting. Since single-page, linking to an external or hypothetical page. -->
-        <p>If you need help with your activation code, <a href="code.html">click here for detailed code troubleshooting</a> (or call us directly).</p>
-    </section>
+                <dt>Do you charge for support?</dt>
+                <dd>Basic phone guidance is free. Some extended/premium sessions may have fees — see our Refund Policy below.</dd>
+
+                <dt>How do I update the Prime Video app?</dt>
+                <dd>Go to your device's app store, search for Prime Video, and select Update if available.</dd>
+            </dl>
+        </section>
+
+        <section id="contact">
+            <h2>Contact Our Support Team</h2>
+            <p>For fast help with activation, errors, or any Prime Video TV issue, call our 24/7 helpline:</p>
+            <div class="phone-number">+1-888-766-1625</div>
+            <p>We offer expert phone support. This is an independent service — official Amazon support is available directly through their website.</p>
+            <p>For detailed activation code troubleshooting, <a href="code.html">click here</a> or simply call the number above.</p>
+        </section>
+
+    </main>
 
     <footer>
-        <p><a href="#terms">Terms of Service</a> | <a href="#privacy">Privacy Policy</a> | <a href="#refunds">Refund Policy</a></p>
-        <p class="disclaimer">Prime Experts Helpline 24x7 is an independent service provider and is not affiliated with Amazon, Prime Video, or any related brands.</p>
+        <p><strong>Prime Experts Helpline 24x7</strong> — Independent Support Service</p>
+        <p class="disclaimer">Not affiliated with Amazon, Prime Video, or any related entities.</p>
+
+        <p>
+            <a href="#terms">Terms of Service</a> |
+            <a href="#privacy">Privacy Policy</a> |
+            <a href="#refunds">Refund Policy</a>
+        </p>
 
         <section id="terms">
             <h3>Terms of Service</h3>
             <p>Last Updated: January 12, 2026</p>
-            <p>These Terms of Service ("Terms") govern your access to and use of the Prime Experts Helpline 24x7 website and services (collectively, the "Service"). By using the Service, you agree to be bound by these Terms. If you do not agree, please do not use the Service.</p>
-            <h4>1. Description of Service</h4>
-            <p>The Service provides independent support and information related to Amazon Prime Video, including activation guides, FAQs, and phone-based helpline assistance. We are not affiliated with Amazon and do not provide official support.</p>
-            <h4>2. Disclaimer</h4>
-            <p>All information on this site is provided "as is" without warranty of any kind. We disclaim all warranties, express or implied, including accuracy, completeness, or fitness for a particular purpose. Use of the Service is at your own risk. We are not liable for any damages arising from your use of the Service or reliance on the information provided.</p>
-            <h4>3. User Conduct</h4>
-            <p>You agree not to use the Service for any unlawful purpose or in violation of any applicable law. You must not attempt to interfere with the Service or access it in an unauthorized manner.</p>
-            <h4>4. Intellectual Property</h4>
-            <p>All content on this site is owned by Prime Experts Helpline 24x7 or licensed from third parties. You may not reproduce, distribute, or create derivative works without permission. Trademarks mentioned (e.g., Amazon, Prime Video) are property of their owners and used for informational purposes only.</p>
-            <h4>5. Limitation of Liability</h4>
-            <p>In no event shall Prime Experts Helpline 24x7 be liable for any indirect, incidental, special, or consequential damages arising out of or in connection with the Service, even if advised of the possibility of such damages.</p>
-            <h4>6. Governing Law</h4>
-            <p>These Terms are governed by the laws of the United States, without regard to conflict of law principles.</p>
-            <h4>7. Changes to Terms</h4>
-            <p>We reserve the right to modify these Terms at any time. Continued use of the Service after changes constitutes acceptance of the new Terms.</p>
-            <h4>8. Contact Us</h4>
-            <p>For questions about these Terms, contact us at +1-888-766-1625.</p>
+            <p>By using this website or calling our helpline, you agree to these terms. This is an independent service with no affiliation to Amazon. Information is provided "as is" without warranties. We are not liable for any issues arising from use of this service or reliance on provided information. Use at your own risk.</p>
+            <p>We reserve the right to change terms at any time. Governing law: United States.</p>
         </section>
 
         <section id="privacy">
             <h3>Privacy Policy</h3>
             <p>Last Updated: January 12, 2026</p>
-            <p>Prime Experts Helpline 24x7 respects your privacy. This Privacy Policy explains how we collect, use, and protect your information when you use our Service.</p>
-            <h4>1. Information We Collect</h4>
-            <p>We may collect personal information such as your phone number when you call our helpline. We do not collect data through forms on this website as it is static. No cookies or tracking technologies are used beyond standard server logs (e.g., IP addresses for security purposes).</p>
-            <h4>2. How We Use Your Information</h4>
-            <p>We use your information to provide support services, respond to inquiries, and improve our offerings. We may use anonymized data for internal analysis.</p>
-            <h4>3. Sharing Your Information</h4>
-            <p>We do not sell or rent your personal information. We may share it with third-party service providers (e.g., telephony providers) solely for delivering our services. We may disclose information if required by law.</p>
-            <h4>4. Data Security</h4>
-            <p>We implement reasonable measures to protect your information from unauthorized access or disclosure. However, no method is 100% secure.</p>
-            <h4>5. Your Rights</h4>
-            <p>You may request access, correction, or deletion of your personal information by contacting us. We comply with applicable data protection laws.</p>
-            <h4>6. Children's Privacy</h4>
-            <p>Our Service is not intended for children under 13. We do not knowingly collect information from children.</p>
-            <h4>7. Changes to Privacy Policy</h4>
-            <p>We may update this Policy. Changes will be posted here with the updated date.</p>
-            <h4>8. Contact Us</h4>
-            <p>For privacy questions, call +1-888-766-1625.</p>
+            <p>We collect minimal data (e.g., call metadata for service improvement). We do not sell personal information. Phone conversations may be recorded for quality purposes. We use reasonable security measures. Contact us with privacy concerns.</p>
         </section>
 
         <section id="refunds">
             <h3>Refund Policy</h3>
             <p>Last Updated: January 12, 2026</p>
-            <p>At Prime Experts Helpline 24x7, we strive to provide satisfactory support. This Refund Policy applies to any paid services (e.g., premium phone consultations).</p>
-            <h4>1. Eligibility for Refunds</h4>
-            <p>Refunds are available if the service did not resolve your issue as promised, or if there was a billing error. Requests must be made within 7 days of the service date.</p>
-            <h4>2. Non-Refundable Services</h4>
-            <p>Free consultations and general advice are non-refundable. Refunds do not apply if the issue was due to user error or factors outside our control (e.g., Amazon server issues).</p>
-            <h4>3. Refund Process</h4>
-            <p>To request a refund, call +1-888-766-1625 with your service details. We will review and process eligible refunds within 5-10 business days via the original payment method.</p>
-            <h4>4. Partial Refunds</h4>
-            <p>We may offer partial refunds for partially resolved issues at our discretion.</p>
-            <h4>5. Changes to Policy</h4>
-            <p>We reserve the right to modify this Policy. Continued use constitutes acceptance.</p>
+            <p>Refunds for any paid premium support are considered within 7 days if the issue remains unresolved due to our guidance. Requests must be made by phone. No refunds for free consultations or issues caused by external factors (e.g., Amazon outages). Refunds processed to original payment method within 5–10 business days.</p>
         </section>
+
+        <p>© 2026 Prime Experts Helpline 24x7. All rights reserved.</p>
     </footer>
+
 </body>
 </html>
